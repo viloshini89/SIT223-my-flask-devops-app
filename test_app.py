@@ -11,3 +11,4 @@ def test_home(client):
     """Test the home page."""
     rv = client.get('/')
     assert rv.data == b'Hello, DevOps World!'
+
