@@ -9,6 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    """This function returns a greeting message for the home route."""
     return "Hello, DevOps World!"
 
 if __name__ == '__main__':
