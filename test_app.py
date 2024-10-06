@@ -12,7 +12,7 @@ def flask_test_client():
     with app.test_client() as client:
         yield client
 
-def test_home(flask_test_client):
+def test_home(test_client):
     """Test the home page route."""
-    response = flask_test_client.get('/')
+    response = test_client.get('/')
     assert response.data == b'Hello, DevOps World!'
